@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
-import connectToDatabase from './database/db.js';
+import {connectToDatabase} from './database/db.js';
 const app = express();
 
 app.get('/', (req, res) => {
